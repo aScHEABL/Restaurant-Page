@@ -131,3 +131,10 @@ body > #content > .bg-overlay > main > .card-div .site-description-div {
     flex-wrap: wrap;
     gap: 8px;
 }
+
+body > #content > .bg-overlay footer {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+

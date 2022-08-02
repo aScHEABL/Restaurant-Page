@@ -1,6 +1,9 @@
 import './style.css';
 import beefNoodlesPic from './beef_noodles.png';
-import logo_pic from './logo-0-1.png';
+import logo_pic from './logo-1.png';
+import icon_facebook from './facebook.png';
+import icon_instagram from './instagram.png';
+import icon_email from './email.png';
 
 export function index () {
     console.log('This is the index page!');
@@ -28,6 +31,10 @@ export function index () {
         const descriptionP1_DOM = reuseableDOM().p_DOM;
         const descriptionP2_DOM = reuseableDOM().p_DOM;
         const descriptionP3_DOM = reuseableDOM().p_DOM;
+        const footer_DOM = document.createElement(`footer`);
+        const facebookIcon = reuseableDOM().img_DOM;
+        const instagramIcon = reuseableDOM().img_DOM;
+        const emailIcon = reuseableDOM().img_DOM;
 
         function reuseableDOM () {
 
@@ -35,12 +42,14 @@ export function index () {
 
         const break_DOM = document.createElement(`break`);
         const p_DOM = document.createElement(`p`);
+        const img_DOM = document.createElement(`img`);
 
             // style
 
             p_DOM.classList.add(`paragraph`);
+            img_DOM.classList.add(`icon`);
 
-            return { break_DOM, p_DOM };
+            return { break_DOM, p_DOM, img_DOM };
         }
 
         // style
@@ -48,13 +57,16 @@ export function index () {
         bgOverlay_DOM.classList.add(`bg-overlay`);
         titleDiv_DOM.classList.add(`title-div`);
         logoImg_DOM.classList.add(`logo`);
-        logoImg_DOM.src = logo_pic;
         h1Title_DOM.classList.add(`h1-title`);
         h2Title_DOM.classList.add(`h2-title`);
         contactDiv_DOM.classList.add(`contact`);
         teleP_DOM.classList.add(`paragraph`);
         emailP_DOM.classList.add(`paragraph`);
         siteDescriptionDiv_DOM.classList.add(`site-description-div`);
+        logoImg_DOM.src = logo_pic;
+        facebookIcon.src = icon_facebook;
+        instagramIcon.src = icon_instagram;
+        emailIcon.src = icon_email;
 
         // textContent
 
@@ -70,7 +82,7 @@ export function index () {
         // append DOM
 
         contentDiv_DOM.append(bgOverlay_DOM);
-        bgOverlay_DOM.append(header_DOM, main_DOM);
+        bgOverlay_DOM.append(header_DOM, main_DOM, footer_DOM);
         header_DOM.append(nav_DOM);
         nav_DOM.append(ul_DOM);
         li_array.forEach((li_DOM) => {
@@ -83,6 +95,7 @@ export function index () {
         titleDiv_DOM.append(logoImg_DOM, reuseableDOM().break_DOM, h1Title_DOM, reuseableDOM().break_DOM, h2Title_DOM);
         contactDiv_DOM.append(teleP_DOM, reuseableDOM().break_DOM, emailP_DOM)
         siteDescriptionDiv_DOM.append(descriptionP1_DOM, descriptionP2_DOM, descriptionP3_DOM);
+        footer_DOM.append(facebookIcon, instagramIcon, emailIcon);
 
         return { body_DOM, contentDiv_DOM, bgOverlay_DOM, header_DOM, nav_DOM, ul_DOM, main_DOM, cardDiv_DOM, titleDiv_DOM, 
         logoImg_DOM, h1Title_DOM, h2Title_DOM, contactDiv_DOM, contactDiv_DOM };
