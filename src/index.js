@@ -4,6 +4,7 @@ import logo_pic from './logo-1.png';
 import icon_facebook from './facebook.png';
 import icon_instagram from './instagram.png';
 import icon_email from './email.png';
+import { menu } from './memu.js';
 
 export function index () {
     console.log('This is the index page!');
@@ -109,6 +110,7 @@ export function index () {
                     break;
                 case 2:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
+                    menu();
                     break;
                 case 3:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
