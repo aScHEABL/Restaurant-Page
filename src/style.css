@@ -62,6 +62,7 @@ body > #content > .bg-overlay > header > nav ul {
 body > #content > .bg-overlay > header > nav > ul li {
     color:  var(--dark-gray);
     font-size: 24px;
+    cursor: pointer;
 }
 
 body > #content > .bg-overlay main {
