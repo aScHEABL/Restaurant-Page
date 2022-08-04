@@ -60,6 +60,7 @@ export function welcome () {
     contentDiv_DOM.replaceChildren();
 
     // style
+    main_DOM.classList.add(`welcome-main`);
     cardDiv_DOM.classList.add(`card-div`);
     outerBgOverlay_DOM.classList.add(`outer-bg-overlay`);
     innerBgOverlay_DOM.classList.add(`inner-bg-overlay`);

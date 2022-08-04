@@ -71,11 +71,12 @@ ul li {
     cursor: pointer;
 }
 
-main {
+.welcome-main {
     height: 80%;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card-div {
@@ -147,9 +148,28 @@ footer {
 
 /* Menu page */
 
-.menu-div {
-    width: 40%;
+.menu-main {
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
+}
+
+.menu-div {
+    padding-top: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-div-left {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    justify-items: start;
+}
+
+.menu-div-right {
+    display: flex;
+    grid-template-columns: 9fr 1fr;
+    justify-items: start;
 }
