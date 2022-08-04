@@ -5,7 +5,7 @@ import icon_facebook from './facebook.png';
 import icon_instagram from './instagram.png';
 import icon_email from './email.png';
 import { menu } from './memu.js';
-import { loadWelcomePage, loadMenuPage } from './index.js';
+import { loadWelcomePage, loadMenuPage, loadOrderPage, loadReservationPage, loadCareerPage } from './index.js';
 
 export function welcome () {
     console.log('This is the welcome page!');
@@ -113,6 +113,7 @@ export function welcome () {
                     break;
                 case 1:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
+                    loadOrderPage();
                     break;
                 case 2:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
@@ -120,9 +121,11 @@ export function welcome () {
                     break;
                 case 3:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
+                    loadReservationPage();
                     break;
                 case 4:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
+                    loadCareerPage();
                     break;
             }
         })

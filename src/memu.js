@@ -1,8 +1,6 @@
 import './style.css';
 import logo_pic from './logo-1.png';
-import { welcome } from './welcome';
-import { loadWelcomePage } from './index.js';
-import { loadMenuPage } from './index.js';
+import { loadWelcomePage, loadOrderPage, loadMenuPage, loadReservationPage, loadCareerPage } from './index.js';
 
 export function menu () {
     console.log('This is the menu page!');
@@ -169,15 +167,18 @@ export function menu () {
                     break;
                 case 1:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
+                    loadOrderPage();
                     break;
                 case 2:
                     console.log(`clicked ${li_array[index]}, do nothing`);
                     break;
                 case 3:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
+                    loadReservationPage();
                     break;
                 case 4:
                     console.log(`clicked ${li_array[index]}, redirecting to ${li_array[index]} page`);
+                    loadCareerPage();
                     break;
             }
         })

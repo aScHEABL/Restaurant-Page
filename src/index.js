@@ -1,11 +1,8 @@
-import './style.css';
-import beefNoodlesPic from './beef_noodles.png';
-import logo_pic from './logo-1.png';
-import icon_facebook from './facebook.png';
-import icon_instagram from './instagram.png';
-import icon_email from './email.png';
 import { menu } from './memu.js';
-import { welcome } from './welcome';
+import { welcome } from './welcome.js';
+import { order } from './order.js';
+import { reservation } from './reservation.js';
+import { career } from './career.js';
 
 welcome();
 
@@ -14,7 +11,7 @@ export function loadWelcomePage () {
 }
 
 export function loadOrderPage() {
-    
+    order();
 }
 
 export function loadMenuPage () {
@@ -22,9 +19,9 @@ export function loadMenuPage () {
 }
 
 export function loadReservationPage () {
-    
+    reservation();
 }
 
 export function loadCareerPage () {
-
+    career();
 }
