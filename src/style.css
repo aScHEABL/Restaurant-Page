@@ -160,6 +160,8 @@ footer {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    row-gap: 4px;
 }
 
 .menu-div-left {

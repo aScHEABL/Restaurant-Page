@@ -13,7 +13,18 @@ export function loadWelcomePage () {
     welcome();
 }
 
+export function loadOrderPage() {
+    
+}
+
 export function loadMenuPage () {
     menu();
 }
 
+export function loadReservationPage () {
+    
+}
+
+export function loadCareerPage () {
+
+}

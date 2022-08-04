@@ -76,11 +76,8 @@ export function menu () {
     const cuisineCnameArray = cuisineObject.map((object) => object.Cname);
     const cuisineEnameArray = cuisineObject.map((object) => object.Ename);
     const cuisinePriceArray = cuisineObject.map((object) => object.price);
-    console.log(cuisineCnameArray.length);
 
-    let menuDivLeftArray_DOM = [];
-    let menuDivRightArray_DOM = [];
-
+    let menuDivArray_DOM = [];
     let cuisineP_DOM = [];
     let cuisineS_DOM = [];
     let cuisinePrice_DOM = [];
@@ -89,16 +86,14 @@ export function menu () {
 
         // create DOM
 
-        menuDivLeftArray_DOM.push(document.createElement(`div`));
-        menuDivRightArray_DOM.push(document.createElement(`div`));
+        menuDivArray_DOM.push(document.createElement(`div`));
         cuisineP_DOM.push(reuseableDOM().p_DOM);
         cuisineS_DOM.push(reuseableDOM().p_DOM);
         cuisinePrice_DOM.push(reuseableDOM().p_DOM);
 
         // style & class
 
-        menuDivLeftArray_DOM[i].classList.add(`menu-div-left`);
-        menuDivRightArray_DOM[i].classList.add(`menu-div-right`);
+        menuDivArray_DOM[i].classList.add(`menu-div-left`);
         // cuisineP_DOM[i].classList.add(`paragraph`);
         // cuisineS_DOM[i].classList.add(`paragraph`);
         // cuisinePrice_DOM[i].classList.add(`paragraph`);
@@ -112,8 +107,8 @@ export function menu () {
     }
 
     for (let i = 0; i < 14; i++) {
-        menuDivLeftArray_DOM[i].append(cuisineP_DOM[i], cuisinePrice_DOM[i], cuisineS_DOM[i]);
-        menuDiv_DOM.append(menuDivLeftArray_DOM[i]);
+        menuDivArray_DOM[i].append(cuisineP_DOM[i], cuisinePrice_DOM[i], cuisineS_DOM[i]);
+        menuDiv_DOM.append(menuDivArray_DOM[i]);
     }
 
 
