@@ -1,4 +1,4 @@
-import menu from './memu.js';
+import menu from './menu.js';
 import welcome from './welcome.js';
 import order from './order.js';
 import reservation from './reservation.js';
