@@ -1,8 +1,8 @@
-import { menu } from './memu.js';
-import { welcome } from './welcome.js';
-import { order } from './order.js';
-import { reservation } from './reservation.js';
-import { career } from './career.js';
+import menu from './memu.js';
+import welcome from './welcome.js';
+import order from './order.js';
+import reservation from './reservation.js';
+import career from './career.js';
 
 welcome();
 

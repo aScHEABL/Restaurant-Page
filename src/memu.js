@@ -2,7 +2,7 @@ import './style.css';
 import logo_pic from './logo-1.png';
 import { loadWelcomePage, loadOrderPage, loadMenuPage, loadReservationPage, loadCareerPage } from './index.js';
 
-export function menu () {
+export default function menu () {
     console.log('This is the menu page!');
 
     //target & create DOM elements

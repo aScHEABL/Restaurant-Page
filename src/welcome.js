@@ -7,7 +7,7 @@ import icon_email from './email.png';
 import { menu } from './memu.js';
 import { loadWelcomePage, loadMenuPage, loadOrderPage, loadReservationPage, loadCareerPage } from './index.js';
 
-export function welcome () {
+export default function welcome () {
     console.log('This is the welcome page!');
 
     //target & create DOM elements
