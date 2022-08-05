@@ -73,6 +73,9 @@ export default function welcome () {
     facebookIcon.src = icon_facebook;
     instagramIcon.src = icon_instagram;
     emailIcon.src = icon_email;
+    facebookIcon.classList.add(`social-media-icon`);
+    instagramIcon.classList.add(`social-media-icon`);
+    emailIcon.classList.add(`social-media-icon`);
 
     // textContent
 

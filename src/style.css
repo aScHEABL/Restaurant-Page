@@ -146,6 +146,10 @@ footer {
     gap: 32px;
 }
 
+.social-media-icon {
+    cursor: pointer;
+}
+
 /* Menu page */
 
 .menu-main {
