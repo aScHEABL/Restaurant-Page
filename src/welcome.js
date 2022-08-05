@@ -4,7 +4,6 @@ import logo_pic from './logo-1.png';
 import icon_facebook from './facebook.png';
 import icon_instagram from './instagram.png';
 import icon_email from './email.png';
-import { menu } from './memu.js';
 import { loadWelcomePage, loadMenuPage, loadOrderPage, loadReservationPage, loadCareerPage } from './index.js';
 
 export default function welcome () {
