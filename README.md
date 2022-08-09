@@ -4,7 +4,9 @@ This is the Restaurant Page project from [The Odin Project](https://www.theodinp
 
 [Live Demo](https://ascheabl.github.io/Restaurant-Page/) 👈 <br>
 
-![screenshot of live demo](./resources/images/Screen%20Shot%202022-08-03%20at%2011.17.13%20AM.png) <br>
+![screenshot of live demo-0](./resources/images/Screen%20Shot%202022-08-03%20at%2011.17.13%20AM.png) <br>
+
+![screenshot of live demo-1](./resources/images/Screen%20Shot%202022-08-10%20at%202.34.07%20AM.png) <br>
 
 ## Built with <br>
 
