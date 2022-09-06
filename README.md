@@ -22,6 +22,8 @@ This is the Restaurant Page project from [The Odin Project](https://www.theodinp
 - Git and Github <br>
 - Google Fonts <br>
 - Material Design <br>
+- Webpack <br>
+
 ## Outcome <br>
 
 A website that switch "tabs" dynamically without having to download the content from the server again. <br>
